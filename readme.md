@@ -16,7 +16,7 @@
 
 - [Tools used](#tools-used)
 
-- [Project access](#project-access)
+- [License](#license)
 
 - [Open and run the project](#open-and-run-the-project)
 
@@ -30,10 +30,13 @@
 
 ## Functionalities
 
+❌ `Functionality 1:` Customers can register and log in securely.
+
 to be decided
 
 ## Application
 
+You can see it <a href="https://daintz.github.io/statemind2/">here</a>
 <div align="center">
 
 </div>
@@ -61,7 +64,9 @@ to be decided
 </table>
 
 ## License
-License Creative Commons No Commercial (CC BY-NC)
+<a href="https://en.wikipedia.org/wiki/Creative_Commons_NonCommercial_license">
+   License Creative Commons No Commercial (CC BY-NC)
+<a>
 
 ## Open and run the project
 Follow these steps to be able to run it in a local development environment:
