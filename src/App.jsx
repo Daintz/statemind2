@@ -1,8 +1,8 @@
 function App () {
   return (
     <>
-      <header>
-        <nav className="mx-[2.1rem] max-w-screen flex flex-wrap items-center justify-between p-4 text-white">
+      <header className="header text-white">
+        <nav className="mx-[2.1rem] max-w-screen flex flex-wrap items-center justify-between p-4">
           <a className="flex items-center">
             <span className="self-center text-2xl whitespace-nowrap font-bold">
               STATEMIND
@@ -46,7 +46,7 @@ function App () {
                   href="#"
                   className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 text-base md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0"
                 >
-                  CLASS
+                  ABOUT
                 </a>
               </li>
               <li>
@@ -54,7 +54,7 @@ function App () {
                   href="#"
                   className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 text-base md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0"
                 >
-                  ABOUT
+                  CLASS
                 </a>
               </li>
               <li>
@@ -100,20 +100,28 @@ function App () {
             </ul>
           </div>
         </nav>
-        <div className="mx-[2.1rem] px-[1.2rem] pt-52 pb-64">
-          <div className="mb-8">
-            <h1 className="self-center whitespace-nowrap text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-2xl font-bold">I help you achieve all your goals</h1>
-          </div>
-          <div className="mb-8">
-            <p className="self-center whitespace-nowrap text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p className="self-center whitespace-nowrap text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl max-w-2xl">Voluptatem quibusdam maiores suscipit vitae.</p>
-          </div>
-          <div className="">
-            <button className="rounded-md bg-red-600 px-3 py-3 text-white mr-6">Start now</button>
-            <button className="rounded-md border px-3 py-3 text-white">Details</button>
-          </div>
-        </div>
+        <section className="w-[95%] mx-auto px-[1.2rem] pt-52 pb-64">
+          <header className="mb-8">
+            <h1 className="text-[1.15rem] text-4xl font-bold">I help you achieve all your goals</h1>
+          </header>
+          <article className="mb-8">
+            <p className="text-xl">You do not have to be the best to start, you have to start to be the best.</p>
+          </article>
+          <button className="rounded-md bg-red-600 px-4 py-[0.8rem] mr-6">Start now</button>
+          <button className="rounded-md border px-4 py-3">Details</button>
+        </section>
       </header>
+
+      <section className="grid grid-cols-2 sm:grid-cols-6 gap-4 w-[95%] mx-auto px-[2rem] pt-20 pb-20 sm:space-x-10">
+        <img className="w-90 col-span-2" src="https://36580daefdd0e4c6740b-4fe617358557d0f7b1aac6516479e176.ssl.cf1.rackcdn.com/content/contact.31.1658330528.png"></img>
+        <article className="col-span-3">
+          <header className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-2xl font-bold">
+            ABOUT US
+          </header>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis sapiente, ad maiores aspernatur laboriosam magni ducimus sint nihil. Debitis temporibus deleniti ipsam quam suscipit quod ab aperiam ut dolore quo!</p>
+        </article>
+      </section>
+
     </>
   )
 }
