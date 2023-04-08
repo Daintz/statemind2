@@ -20,7 +20,7 @@ function App () {
 
   return (
     <>
-      <nav className={`max-w-screen flex flex-wrap items-center justify-between px-12 py-4 sticky top-0 navbar-text ${isScroll ? 'text-black bg-white' : 'text-white'}`} >
+      <nav className={`max-w-screen flex flex-wrap items-center justify-between px-12 py-4 sticky top-0 navbar-text ${isScroll ? 'text-black bg-white shadow-lg' : 'text-white'}`} >
         <a className="flex items-center">
           <span className="self-center text-2xl whitespace-nowrap font-bold">
             STATEMIND
@@ -29,7 +29,7 @@ function App () {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -71,15 +71,7 @@ function App () {
                 href="#class"
                 className="block py-2 pl-3 pr-4 rounded text-base md:p-0 hover:text-red-700"
               >
-                CLASS
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="block py-2 pl-3 pr-4 rounded text-base md:p-0 hover:text-red-700"
-              >
-                SERVICES
+                CLASSES
               </a>
             </li>
             <li>
@@ -92,18 +84,10 @@ function App () {
             </li>
             <li>
               <a
-                href="#review"
+                href="#services"
                 className="block py-2 pl-3 pr-4 rounded text-base md:p-0 hover:text-red-700"
               >
-                REVIEW
-              </a>
-            </li>
-            <li>
-              <a
-                href="#blog"
-                className="block py-2 pl-3 pr-4 rounded text-base md:p-0 hover:text-red-700"
-              >
-                BLOG
+                SERVICES
               </a>
             </li>
             <li>
@@ -174,7 +158,7 @@ function App () {
           </div>
           <div className="sm:col-span-1 max-w-sm bg-white border border-black-200 rounded-lg shadow mb-6 sm:mb-0">
               <a href="#">
-                  <img className="rounded-t-lg h-80 mx-auto" src="public/img/fitness.png" alt="image mindset" />
+                  <img className="rounded-t-lg h-80 mx-auto" src="/img/fitness.png" alt="image mindset" />
               </a>
               <div className="p-5">
                   <a href="#">
@@ -212,18 +196,18 @@ function App () {
           </p>
         </article>
         <img
-          className="w-90 col-start-5 col-end-7"
-          src="https://36580daefdd0e4c6740b-4fe617358557d0f7b1aac6516479e176.ssl.cf1.rackcdn.com/content/contact.31.1658330528.png"
+          className="w-50 col-start-5 col-end-7"
+          src="https://img.freepik.com/foto-gratis/peso-saludable-cuidado-masculino-atletico_1139-695.jpg"
         ></img>
       </section>
 
-      <section className="class w-[100%] px-[2rem] pt-28 pb-28" id="class">
+      <section className="class w-[100%] px-[2rem] pt-28 pb-28" id="services">
         <header className="text-center text-black text-5xl font-bold mb-20">
           SERVICES
         </header>
         <article className="justify-items-center justify-center gap-4 w-[100%] px-[10%] md:px-[20%]">
           <div className="p-4 bg-white border border-gray-200 rounded-lg shadow mb-6 sm:py-8 sm:mb-0">
-              <h5 className="mb-4 text-xl font-medium text-gray-500"> ========= </h5>
+              <h5 className="mb-4 text-xl font-medium text-gray-500">Join our community</h5>
               <div className="flex items-baseline text-gray-900">
                   <span className="text-3xl font-semibold">$</span>
                   <span className="text-5xl font-extrabold tracking-tight">100</span>
@@ -233,16 +217,26 @@ function App () {
               <ul role="list" className="space-y-5 my-7">
                   <li className="flex space-x-3">
 
-                      <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-                      <span className="text-base font-normal leading-tight text-gray-500"> ========= </span>
+                      <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                      <span className="text-base font-normal leading-tight text-gray-500">Access to all the platforms where our community shares their victories</span>
                   </li>
-                  <li className="flex space-x-3 line-through decoration-gray-500">
+                  <li className="flex space-x-3">
 
-                      <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-                      <span className="text-base font-normal leading-tight text-gray-500"> ========= </span>
+                      <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                      <span className="text-base font-normal leading-tight text-gray-500">Live mentoring with me and the community</span>
+                  </li>
+                  <li className="flex space-x-3">
+
+                      <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                      <span className="text-base font-normal leading-tight text-gray-500">Fitness consulting</span>
+                  </li>
+                  <li className="flex space-x-3">
+
+                      <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                      <span className="text-base font-normal leading-tight text-gray-500">I teach you to increase your income</span>
                   </li>
               </ul>
-              <button type="button" className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+              <button type="button" className="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Start to be a winner</button>
           </div>
         </article>
       </section>
