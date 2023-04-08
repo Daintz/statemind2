@@ -5,6 +5,7 @@
 - [ ] refactor: improved code readability and organization
 - [ ] docs: updated README with new instructions
 - [ ] chore: updated dependencies and configuration files
+- [ ] style: pages updated styles
 
 ### Describe Changes
 
