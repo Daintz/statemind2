@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { handleScroll } from './helpers/handleScroll'
 
 function App () {
+  handleScroll(600)
+
   return (
     <>
       <header className="text-white">

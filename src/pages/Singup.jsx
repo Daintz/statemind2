@@ -1,8 +1,11 @@
+import { handleScroll } from '../helpers/handleScroll'
 
 function Singup () {
+  handleScroll(0)
+
   return (
-    <form className="lgm:px-[10%] lg:px-[27%] pt-[2.5rem] pb-[4.5rem]">
-      <div className="p-12 rounded-lg bg-white border border-black">
+    <form className="lgm:px-[10%] lg:px-[27%] pt-[1.5rem] pb-[2.5rem]">
+      <div className="p-12 rounded-lg bg-white border border-black shadow-2xl">
         <h1 className="text-4xl font-bold text-center mb-6">REGISTER</h1>
         <div className="mb-6">
           <label

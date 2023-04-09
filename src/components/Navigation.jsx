@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { handleScroll } from '../helpers/handleScroll'
 
 function Navigation () {
-  const isScroll = handleScroll(650)
+  const isScroll = handleScroll(0)
 
   return (
     <nav className={`max-w-screen flex flex-wrap items-center justify-between px-12 py-4 sticky top-0 navbar-text ${isScroll ? 'text-black bg-white shadow-lg' : 'text-white'}`} >

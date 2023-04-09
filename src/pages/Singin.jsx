@@ -1,8 +1,11 @@
+import { handleScroll } from '../helpers/handleScroll'
 
 const Singin = () => {
+  handleScroll(0)
+
   return (
     <form className="lgm:px-[10%] lg:px-[27%] pt-[8rem] pb-[9.3rem]">
-      <div className="p-12 rounded-lg bg-white border border-black">
+      <div className="p-12 rounded-lg bg-white border border-black drop-shadow-md">
         <h1 className="text-4xl font-bold text-center mb-6">LOGIN</h1>
         <div className="mb-6">
           <label
