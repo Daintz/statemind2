@@ -1,7 +1,7 @@
 
 function Singup () {
   return (
-    <form className="lgm:px-[10%] lg:px-[27%] pt-[3.5rem] pb-[5.5rem]">
+    <form className="lgm:px-[10%] lg:px-[27%] pt-[2.5rem] pb-[4.5rem]">
       <div className="p-12 rounded-lg bg-white border border-black">
         <h1 className="text-4xl font-bold text-center mb-6">REGISTER</h1>
         <div className="mb-6">

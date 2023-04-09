@@ -1,23 +1,8 @@
-import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { handleScroll } from '../helpers/handleScroll'
 
 function Navigation () {
-  const [isScroll, setIsScroll] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY
-      const threshold = 650
-
-      setIsScroll(scrollPosition > threshold)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  const isScroll = handleScroll(650)
 
   return (
     <nav className={`max-w-screen flex flex-wrap items-center justify-between px-12 py-4 sticky top-0 navbar-text ${isScroll ? 'text-black bg-white shadow-lg' : 'text-white'}`} >

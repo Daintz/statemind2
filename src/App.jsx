@@ -19,7 +19,7 @@ function App () {
           <Link to="/singup" className="rounded-md bg-red-600 px-4 py-[0.8rem] mr-6">
             Start now
           </Link>
-          <Link to="/singin" className="rounded-md bg-red-600 px-4 py-[0.8rem] mr-6">
+          <Link to="/singin" className="rounded-md bg-white text-black px-4 py-[0.8rem] mr-6">
             Sign In
           </Link>
         </section>
