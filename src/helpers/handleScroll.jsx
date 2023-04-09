@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setIsScroll, setThreshold } from '../features/scrollDown'
 
-export const handleScroll = (threshold) => {
+export const handleScroll = threshold => {
   const { isScroll } = useSelector(state => state.scroll)
   const dispatch = useDispatch()
 

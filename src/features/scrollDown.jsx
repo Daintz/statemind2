@@ -12,12 +12,10 @@ export const scrollSlice = createSlice({
     setIsScroll: (state, action) => {
       const scrollPosition = window.scrollY
       state.isScroll = scrollPosition > state.threshold
-      console.log(state.isScroll)
     },
     setThreshold: (state, action) => {
       if (typeof action.payload === 'number') {
         state.threshold = action.payload
-        console.log(state.threshold)
       }
     }
   }
